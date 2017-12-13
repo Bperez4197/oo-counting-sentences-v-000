@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     count = 0
-    if self.end_with?(".","?","!")
+    if sentence? || question? || exclamation?
       count += 1
     end
   end
