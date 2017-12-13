@@ -15,9 +15,6 @@ class String
   end
 
   def count_sentences
-    count = 0
-    if sentence? || question? || exclamation?
-      count += 1
-    end
+  self.split(/\b[.!?]{1,}/).count
   end
 end
