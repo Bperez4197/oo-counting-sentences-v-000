@@ -7,7 +7,7 @@ class String
   end
 
   def question?
-
+    wlf.end_with?("?")
   end
 
   def exclamation?
